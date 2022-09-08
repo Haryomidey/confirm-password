@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(14, 13, 13);
+}
+
+.container {
+    height: 300px;
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    padding: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 5px 60px 5px 7px;
+    font-size: 16px;
+    margin: 7px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px light black;
+
+}
+
+input:focus {
+    border: 1px solid rgb(0, 26, 255);
+    padding: 5px 7px;
+}
+
+.display {
+    background: rgb(241, 176, 167);
+    color: rgb(51, 3, 3);
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    display: none;
+    border: 0;
+    border-radius: 4px;
+}
+
+.display-active{
+    display: block !important;
+    background: green !important;
+    color: white !important;
+}
+
+.display-unactive{
+    display: block !important;
+}
+
+.button-1 {
+    width: 90%;
+    text-align: center;
+    padding: 7px;
+    color: white;
+    background: rgb(7, 7, 219);
+    border: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.4s;
+    border-radius: 4px;
+}
+
+.active {
+    opacity: 1;
+    background: rgb(7, 7, 219);
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.button-2 {
+    position: absolute;
+    right: 40px;
+    font-size: 14px;
+    font-weight: 540;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    padding: 5px;
+    border: 0;
+    height: 30px;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 472px) {
+    .container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .container {
+        width: 300px;
+    }
+
+    h1 {
+        padding: 2px;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 364px) {
+    .container {
+        width: 270px;
+    }
+
+}
